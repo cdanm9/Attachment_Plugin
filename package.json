@@ -1,0 +1,32 @@
+{
+  "name": "plugin_attachment",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@cap-js/attachments": "^1.1.4",
+    "@sap/cds": "^7",
+    "express": "^4",
+    "@sap/cds-hana": "^2"
+  },
+  "devDependencies": {
+    "@sap/cds-dk": "^7",
+    "@sap/eslint-plugin-cds": "^3",
+    "@sap/ux-specification": "^1.120.15",
+    "eslint": "^9"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-managebooks": "cds watch --open managebooks/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "sapux": [
+    "app/managebooks"
+  ],
+  "cds": {
+    "requires": {
+      "db": "hana"
+    }
+  }
+}
